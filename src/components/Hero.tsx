@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { SparklesCore } from '@/components/ui/sparkles';
 
 const Hero: React.FC = () => {
   return (
@@ -23,10 +24,19 @@ const Hero: React.FC = () => {
         </a>
       </div>
       
-      {/* Animated background effects */}
+      {/* Animated sparkles background */}
       <div className="absolute inset-0 overflow-hidden">
+        <SparklesCore
+          id="cosmicSparkles"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={70}
+          className="w-full h-full"
+          particleColor="#8B5CF6"
+          speed={0.5}
+        />
         <div className="absolute inset-0 bg-cosmic-dark bg-opacity-95 z-0"></div>
-        <div className="absolute inset-0 bg-star-field bg-[length:200px_200px] opacity-50 z-0"></div>
       </div>
     </div>
   );

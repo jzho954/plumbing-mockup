@@ -125,6 +125,10 @@ export default {
 					'0%': { backgroundPosition: '0% center' },
 					'100%': { backgroundPosition: '-200% center' },
 				},
+				'grid': {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(var(--cell-size))' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -135,6 +139,7 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out forwards',
 				'fade-in-right': 'fade-in-right 0.6s ease-out forwards',
 				'background-pan': 'background-pan 3s linear infinite',
+				'grid': 'grid 5s linear infinite',
 			},
 			backgroundImage: {
 				'cosmic-gradient': 'linear-gradient(to right, #1E3A8A, #8B5CF6, #1E3A8A)',
