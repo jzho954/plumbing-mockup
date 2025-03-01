@@ -5,6 +5,15 @@ import { SparklesCore } from '@/components/ui/sparkles';
 const Hero: React.FC = () => {
   return (
     <div className="relative min-h-screen bg-black" id="home">
+      {/* Company logo as background - positioned with lower opacity */}
+      <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none">
+        <img 
+          src="/lovable-uploads/2fab90e2-c4c1-4943-9338-b3ad8de7ed9c.png" 
+          alt="Cosmic Plumbing Logo Background" 
+          className="w-4/5 max-w-2xl opacity-10 animate-float"
+        />
+      </div>
+      
       <div className="container mx-auto px-4 py-24 flex flex-col items-center justify-center text-center z-10 relative">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
           New Zealand's Premium Plumbing Service
