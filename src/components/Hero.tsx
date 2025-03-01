@@ -4,8 +4,17 @@ import { SparklesCore } from '@/components/ui/sparkles';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative min-h-screen" id="home">
+    <div className="relative min-h-screen bg-black" id="home">
       <div className="container mx-auto px-4 py-24 flex flex-col items-center justify-center text-center z-10 relative">
+        {/* Company Logo */}
+        <div className="mb-8">
+          <img 
+            src="/lovable-uploads/2fab90e2-c4c1-4943-9338-b3ad8de7ed9c.png" 
+            alt="Cosmic Plumbing Logo" 
+            className="h-32 mx-auto"
+          />
+        </div>
+        
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
           New Zealand's Premium Plumbing Service
         </h1>
@@ -24,19 +33,20 @@ const Hero: React.FC = () => {
         </a>
       </div>
       
-      {/* Animated sparkles background */}
+      {/* Improved sparkles background with more particles and higher visibility */}
       <div className="absolute inset-0 overflow-hidden">
         <SparklesCore
           id="cosmicSparkles"
           background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={70}
+          minSize={1.0}
+          maxSize={2.0}
+          particleDensity={120}
           className="w-full h-full"
           particleColor="#8B5CF6"
-          speed={0.5}
+          speed={0.8}
         />
-        <div className="absolute inset-0 bg-cosmic-dark bg-opacity-95 z-0"></div>
+        {/* Changed opacity to make background darker but still show sparkles */}
+        <div className="absolute inset-0 bg-black bg-opacity-80 z-0"></div>
       </div>
     </div>
   );
