@@ -6,15 +6,6 @@ const Hero: React.FC = () => {
   return (
     <div className="relative min-h-screen bg-black" id="home">
       <div className="container mx-auto px-4 py-24 flex flex-col items-center justify-center text-center z-10 relative">
-        {/* Company Logo */}
-        <div className="mb-8">
-          <img 
-            src="/lovable-uploads/2fab90e2-c4c1-4943-9338-b3ad8de7ed9c.png" 
-            alt="Cosmic Plumbing Logo" 
-            className="h-32 mx-auto"
-          />
-        </div>
-        
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
           New Zealand's Premium Plumbing Service
         </h1>
@@ -33,20 +24,20 @@ const Hero: React.FC = () => {
         </a>
       </div>
       
-      {/* Improved sparkles background with more particles and higher visibility */}
+      {/* Enhanced sparkles background with even more particles and higher visibility */}
       <div className="absolute inset-0 overflow-hidden">
         <SparklesCore
           id="cosmicSparkles"
           background="transparent"
-          minSize={1.0}
-          maxSize={2.0}
-          particleDensity={120}
+          minSize={1.5}
+          maxSize={3.0}
+          particleDensity={150}
           className="w-full h-full"
           particleColor="#8B5CF6"
-          speed={0.8}
+          speed={1.0}
         />
-        {/* Changed opacity to make background darker but still show sparkles */}
-        <div className="absolute inset-0 bg-black bg-opacity-80 z-0"></div>
+        {/* Reduced opacity to make sparkles more visible */}
+        <div className="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
       </div>
     </div>
   );

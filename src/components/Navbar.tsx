@@ -35,15 +35,15 @@ const Navbar: React.FC = () => {
   return (
     <nav className={cn(
       "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-      isScrolled ? "py-3 backdrop-blur-lg bg-cosmic-dark/80 shadow-lg" : "py-5 bg-transparent"
+      isScrolled ? "py-3 backdrop-blur-lg bg-black/80 shadow-lg" : "py-5 bg-transparent"
     )}>
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#" className="flex items-center space-x-2">
-          <div className="relative w-10 h-10 rounded-full bg-cosmic-gradient animate-background-pan bg-200%">
-            <div className="absolute inset-1 bg-cosmic-dark rounded-full flex items-center justify-center text-cosmic-white font-bold text-lg">
-              C
-            </div>
-          </div>
+        <a href="#" className="flex items-center space-x-3">
+          <img 
+            src="/lovable-uploads/2fab90e2-c4c1-4943-9338-b3ad8de7ed9c.png" 
+            alt="Cosmic Plumbing Logo" 
+            className="h-10 w-auto"
+          />
           <span className="text-xl font-display font-bold">Cosmic Plumbing</span>
         </a>
         

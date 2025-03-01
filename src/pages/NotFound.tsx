@@ -15,7 +15,7 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-cosmic-dark text-cosmic-white">
+    <div className="min-h-screen flex items-center justify-center bg-black text-cosmic-white">
       <StarField />
       <div className="text-center z-10 glass p-10 rounded-2xl max-w-md mx-4">
         <div className="text-6xl font-bold font-display mb-4 text-transparent bg-cosmic-gradient bg-clip-text bg-200% animate-background-pan">404</div>

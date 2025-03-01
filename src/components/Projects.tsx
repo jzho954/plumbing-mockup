@@ -51,7 +51,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, description, image, delay 
           className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
           style={{ backgroundImage: `url(${image})` }}
         ></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-cosmic-dark to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
       </div>
       <CardContent className="pt-6">
         <h3 className="text-xl font-medium mb-2">{title}</h3>
