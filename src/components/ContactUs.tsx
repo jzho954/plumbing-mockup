@@ -146,7 +146,7 @@ const ContactUs: React.FC = () => {
         </div>
       </div>
       
-      <style jsx>{`
+      <style>{`
         .stars {
           background-image: 
             radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
