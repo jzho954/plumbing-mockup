@@ -4,16 +4,19 @@ import { SparklesCore } from '@/components/ui/sparkles';
 const Hero: React.FC = () => {
   return (
     <div className="relative min-h-screen bg-black" id="home">
-      {/* Company logo as background - increased opacity to make it fully visible */}
+      {/* Company logo as background - set to 100% opacity */}
       <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none">
         <img 
           src="/lovable-uploads/2fab90e2-c4c1-4943-9338-b3ad8de7ed9c.png" 
           alt="Cosmic Plumbing Logo Background" 
-          className="w-4/5 max-w-2xl opacity-40 animate-float"
+          className="w-4/5 max-w-3xl opacity-100 animate-float"
         />
       </div>
       
-      <div className="container mx-auto px-4 py-24 flex flex-col items-center justify-center text-center z-10 relative">
+      {/* Added a semi-transparent overlay to improve text readability while keeping logo visible */}
+      <div className="absolute inset-0 bg-black bg-opacity-50 z-5"></div>
+      
+      <div className="container mx-auto px-4 py-24 h-screen flex flex-col items-center justify-center text-center z-10 relative">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
           New Zealand's Premium Plumbing Service
         </h1>
@@ -32,8 +35,8 @@ const Hero: React.FC = () => {
         </a>
       </div>
       
-      {/* Enhanced sparkles background with particles but no black overlay */}
-      <div className="absolute inset-0 overflow-hidden">
+      {/* Background sparkles */}
+      <div className="absolute inset-0 overflow-hidden z-1">
         <SparklesCore
           id="cosmicSparkles"
           background="transparent"
