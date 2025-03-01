@@ -22,7 +22,6 @@ export default {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
 				display: ['Space Grotesk', 'sans-serif'],
-				geist: ['Inter', 'sans-serif'], // Added for the HeroSection component
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -126,10 +125,6 @@ export default {
 					'0%': { backgroundPosition: '0% center' },
 					'100%': { backgroundPosition: '-200% center' },
 				},
-				'grid': {
-					'0%': { transform: 'translateY(0)' },
-					'100%': { transform: 'translateY(calc(var(--cell-size) * -1))' }
-				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -140,7 +135,6 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out forwards',
 				'fade-in-right': 'fade-in-right 0.6s ease-out forwards',
 				'background-pan': 'background-pan 3s linear infinite',
-				'grid': 'grid 5s infinite linear',
 			},
 			backgroundImage: {
 				'cosmic-gradient': 'linear-gradient(to right, #1E3A8A, #8B5CF6, #1E3A8A)',
