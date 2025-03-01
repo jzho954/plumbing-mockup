@@ -45,8 +45,8 @@ const Hero: React.FC = () => {
           particleColor="#8B5CF6"
           speed={1.0}
         />
-        {/* Reduced opacity to make sparkles more visible */}
-        <div className="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
+        {/* Reduced opacity to make logo more visible */}
+        <div className="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
       </div>
     </div>
   );
