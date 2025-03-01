@@ -1,16 +1,15 @@
-
 import React from 'react';
 import { SparklesCore } from '@/components/ui/sparkles';
 
 const Hero: React.FC = () => {
   return (
     <div className="relative min-h-screen bg-black" id="home">
-      {/* Company logo as background - positioned with lower opacity */}
+      {/* Company logo as background - increased opacity to make it fully visible */}
       <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none">
         <img 
           src="/lovable-uploads/2fab90e2-c4c1-4943-9338-b3ad8de7ed9c.png" 
           alt="Cosmic Plumbing Logo Background" 
-          className="w-4/5 max-w-2xl opacity-10 animate-float"
+          className="w-4/5 max-w-2xl opacity-40 animate-float"
         />
       </div>
       
@@ -33,7 +32,7 @@ const Hero: React.FC = () => {
         </a>
       </div>
       
-      {/* Enhanced sparkles background with even more particles and higher visibility */}
+      {/* Enhanced sparkles background with particles but no black overlay */}
       <div className="absolute inset-0 overflow-hidden">
         <SparklesCore
           id="cosmicSparkles"
@@ -45,8 +44,6 @@ const Hero: React.FC = () => {
           particleColor="#8B5CF6"
           speed={1.0}
         />
-        {/* Reduced opacity to make logo more visible */}
-        <div className="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
       </div>
     </div>
   );
