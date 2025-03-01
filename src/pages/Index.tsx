@@ -7,7 +7,6 @@ import QuoteForm from '@/components/QuoteForm';
 import Reviews from '@/components/Reviews';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
-import StarField from '@/components/StarField';
 import Ecosystem from '@/components/Ecosystem';
 import Projects from '@/components/Projects';
 
@@ -39,8 +38,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-cosmic-dark text-cosmic-white">
-      <StarField />
+    <div className="min-h-screen bg-cosmic-dark text-cosmic-white overflow-x-hidden">
       <Navbar />
       <Hero />
       <Services />
